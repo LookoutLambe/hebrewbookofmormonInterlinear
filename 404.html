@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Not on this site — Hebrew Book of Mormon</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="stylesheet" href="/fonts/david_libre.css">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="mast"><div class="wrap"><a class="brand" href="/"><img class="mark" src="/images/mark-bar.svg" alt="" width="34" height="34"><span class="en">Hebrew Book of Mormon</span><span class="he" lang="he">ספר מורמון</span></a></div></header>
+<main id="main"><article class="wrap article">
+  <p class="kicker">Not found</p>
+  <h1>That page is not on this site.</h1>
+  <p class="lead">The Hebrew text itself lives in the reader at sefermormon.com. This site is about the book.</p>
+  <p id="hint"></p>
+  <p><a class="btn primary" href="/">Home</a> <a class="btn" href="https://sefermormon.com/bom/bom.html">Open the reader</a></p>
+</article></main>
+<script>
+(function () {
+  var p = location.pathname;
+  if (/^\/(hebrew|bom|ot|nt|dc|pgp|jst)\b/.test(p) || /\.html$/.test(p)) {
+    var u = 'https://sefermormon.com' + p + location.search + location.hash;
+    var h = document.getElementById('hint');
+    h.innerHTML = 'Looking for a chapter? The same address in the reader is <a href="' + u.replace(/"/g, '&quot;') + '">' + u.replace(/</g, '&lt;') + '</a>.';
+  }
+})();
+</script>
+</body>
+</html>
