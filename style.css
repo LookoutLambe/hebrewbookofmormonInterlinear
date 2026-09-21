@@ -109,7 +109,11 @@ section + section { border-top: 1px solid var(--rule); }
 .kicker { color: var(--ink-3); font-size: .78rem; letter-spacing: .09em; text-transform: uppercase; margin-bottom: .45rem; }
 h2 { font-size: clamp(1.5rem, 3vw, 2rem); margin-bottom: .5rem; }
 h2 .he { color: var(--ink-3); font-weight: 400; margin-left: .6rem; font-size: .85em; }
-.intro { color: var(--ink-2); max-width: 60ch; margin-bottom: 1.8rem; }
+/* Section heads sit on the page's axis, like the hero; the grids and lists
+   under them keep their own alignment. */
+main section .kicker, main section h2 { text-align: center; }
+.intro { color: var(--ink-2); max-width: 60ch; margin: 0 auto 1.8rem; text-align: center; }
+.faq { margin: 0 auto; }
 
 .doors { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
 .door { background: var(--card); border: 1px solid var(--rule); border-radius: 10px; padding: 1.2rem 1.25rem; text-decoration: none; color: inherit; display: block; }
@@ -138,7 +142,7 @@ h2 .he { color: var(--ink-3); font-weight: 400; margin-left: .6rem; font-size: .
 .app p { margin: .3rem 0 .8rem; color: var(--ink-2); }
 .app .note { font-size: .88rem; color: var(--ink-3); margin: .6rem 0 0; }
 
-.faq { max-width: 70ch; }
+.faq { max-width: 70ch; margin: 0 auto; }
 .faq details { border-top: 1px solid var(--rule); }
 .faq details:last-child { border-bottom: 1px solid var(--rule); }
 .faq summary { cursor: pointer; font-weight: 500; font-size: 1.05rem; min-height: 48px; display: flex; align-items: center; padding: .35rem 0; list-style: none; }
