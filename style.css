@@ -87,7 +87,8 @@ h1 { font-size: clamp(2.2rem, 5.5vw, 4rem); margin: .5rem 0 1rem; letter-spacing
 /* The interlinear verse: the product itself, as the hero's picture */
 .verse { background: var(--card); border: 1px solid var(--rule); border-top: 4px solid var(--gold); border-radius: 10px;
   padding: 1.3rem 1.3rem 1rem; box-shadow: var(--shadow); }
-.verse .ref { display: flex; flex-direction: row-reverse; justify-content: space-between; align-items: baseline; gap: 1rem; font-size: .85rem; color: var(--ink-3); margin-bottom: .9rem; }
+.verse .ref { display: flex; flex-direction: row-reverse; justify-content: space-between; align-items: baseline; gap: .3rem 1rem; flex-wrap: wrap; font-size: .85rem; color: var(--ink-3); margin-bottom: .9rem; }
+.verse .ref span { white-space: nowrap; }
 .verse .ref [lang="he"] { color: var(--ink); font-size: 1rem; }
 .il { direction: rtl; display: flex; flex-wrap: wrap; gap: .7rem 1.1rem; margin: 0; padding: 0; list-style: none; }
 .il li { display: flex; flex-direction: column; align-items: center; text-align: center; }
