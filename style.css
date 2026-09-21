@@ -108,10 +108,12 @@ section { padding: clamp(2.4rem, 6vw, 4.5rem) 0; }
 section + section { border-top: 1px solid var(--rule); }
 .kicker { color: var(--ink-3); font-size: .78rem; letter-spacing: .09em; text-transform: uppercase; margin-bottom: .45rem; }
 h2 { font-size: clamp(1.5rem, 3vw, 2rem); margin-bottom: .5rem; }
-h2 .he { color: var(--ink-3); font-weight: 400; margin-left: .6rem; font-size: .85em; }
+h2 .he { display: block; color: var(--ink-3); font-weight: 400; font-size: .72em; margin-top: .3rem; }
 /* Section heads sit on the page's axis, like the hero; the grids and lists
    under them keep their own alignment. */
 main section .kicker, main section h2 { text-align: center; }
+main section h2 { margin-bottom: 2rem; }
+main section h2:has(+ .intro) { margin-bottom: .5rem; }
 .intro { color: var(--ink-2); max-width: 60ch; margin: 0 auto 1.8rem; text-align: center; }
 .faq { margin: 0 auto; }
 
@@ -122,8 +124,8 @@ main section .kicker, main section h2 { text-align: center; }
 .door span { color: var(--ink-2); font-size: .95rem; }
 .door .go { display: block; margin-top: .7rem; color: var(--link); font-size: .9rem; }
 
-.facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; }
-.fact h3 { font-size: 1.15rem; margin-bottom: .35rem; }
+.facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2.5rem 3rem; }
+.fact h3 { font-size: 1.15rem; margin-bottom: .45rem; padding-top: .9rem; border-top: 2px solid var(--gold); }
 .fact p { color: var(--ink-2); margin: 0; }
 .fact [lang="he"] { color: var(--ink); }
 
