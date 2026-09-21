@@ -98,7 +98,7 @@ h2 { font-size: clamp(1.5rem, 3vw, 2rem); margin-bottom: .5rem; }
 h2 .he { color: var(--ink-3); font-weight: 400; margin-left: .6rem; font-size: .85em; }
 .intro { color: var(--ink-2); max-width: 60ch; margin-bottom: 1.8rem; }
 
-.doors { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.doors { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
 .door { background: var(--card); border: 1px solid var(--rule); border-radius: 10px; padding: 1.2rem 1.25rem; text-decoration: none; color: inherit; display: block; }
 .door:hover { border-color: var(--navy); }
 .door strong { display: block; font-size: 1.15rem; font-weight: 500; margin-bottom: .25rem; }
@@ -119,15 +119,6 @@ h2 .he { color: var(--ink-3); font-weight: 400; margin-left: .6rem; font-size: .
 .books .en { flex: 1; }
 .books small { color: var(--ink-3); font-size: .74rem; white-space: nowrap; }
 
-.eds { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 1.4rem 1.25rem; }
-@media (min-width: 860px) { .eds { grid-template-columns: repeat(5, minmax(0, 1fr)); } }
-.ed { text-decoration: none; color: inherit; display: block; }
-.ed .cover { aspect-ratio: 2 / 3; display: flex; align-items: flex-end; justify-content: center; }
-.ed img { max-height: 100%; width: auto; border: 1px solid var(--rule); border-radius: 3px; box-shadow: var(--shadow); }
-.ed strong { display: block; margin-top: .8rem; font-weight: 500; }
-.ed .spec { color: var(--ink-3); font-size: .82rem; }
-.ed p { margin: .3rem 0 .2rem; color: var(--ink-2); font-size: .9rem; }
-.ed .buy { color: var(--link); font-size: .9rem; }
 
 .app { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 1.5rem; align-items: center; background: var(--card); border: 1px solid var(--rule); border-radius: 12px; padding: 1.4rem; }
 .app img { width: 92px; height: 92px; border-radius: 21px; box-shadow: var(--shadow); }
