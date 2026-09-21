@@ -60,13 +60,20 @@ p { margin: 0 0 1em; }
 .top a:hover, .top a[aria-current="page"] { color: var(--gold); border-bottom-color: var(--gold); }
 
 /* Hero */
-.hero { padding: clamp(2.2rem, 6vw, 4.5rem) 0 clamp(1.5rem, 4vw, 3rem); }
+.hero { padding: clamp(2.5rem, 7vw, 5rem) 0 clamp(1.5rem, 4vw, 3rem); }
 .hero .grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: clamp(1.8rem, 4vw, 3rem); }
-.hero h1 { max-width: 22ch; }
+/* The hero is a centred column: the title runs the width of the page and
+   wraps balanced; the lead keeps a reading measure; the two pills sit under
+   it on the axis; the verse card below is the picture. */
+.hero-copy { text-align: center; }
+.hero-copy .eyebrow { justify-content: center; }
+.hero h1 { max-width: none; text-wrap: balance; }
+.hero .lead { margin-left: auto; margin-right: auto; }
+.hero .actions { justify-content: center; }
 .eyebrow { font-size: .78rem; letter-spacing: .09em; text-transform: uppercase; color: var(--ink-3); display: flex; align-items: center; gap: .6rem; flex-wrap: wrap; }
 .eyebrow [lang="he"] { text-transform: none; letter-spacing: 0; font-size: 1.05rem; color: var(--ink); }
 .eyebrow .dot { width: 5px; height: 5px; border-radius: 50%; background: var(--gold-deep); display: inline-block; }
-h1 { font-size: clamp(2.1rem, 5.2vw, 3.5rem); margin: .5rem 0 1rem; letter-spacing: -.01em; }
+h1 { font-size: clamp(2.2rem, 5.5vw, 4rem); margin: .5rem 0 1rem; letter-spacing: -.01em; }
 .lead { font-size: 1.15rem; color: var(--ink-2); max-width: 32em; }
 .actions { display: flex; gap: .75rem; flex-wrap: wrap; margin-top: 1.4rem; }
 .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 1.3rem; border-radius: 8px;
@@ -80,7 +87,7 @@ h1 { font-size: clamp(2.1rem, 5.2vw, 3.5rem); margin: .5rem 0 1rem; letter-spaci
 /* The interlinear verse: the product itself, as the hero's picture */
 .verse { background: var(--card); border: 1px solid var(--rule); border-top: 4px solid var(--gold); border-radius: 10px;
   padding: 1.3rem 1.3rem 1rem; box-shadow: var(--shadow); }
-.verse .ref { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; font-size: .85rem; color: var(--ink-3); margin-bottom: .9rem; }
+.verse .ref { display: flex; flex-direction: row-reverse; justify-content: space-between; align-items: baseline; gap: 1rem; font-size: .85rem; color: var(--ink-3); margin-bottom: .9rem; }
 .verse .ref [lang="he"] { color: var(--ink); font-size: 1rem; }
 .il { direction: rtl; display: flex; flex-wrap: wrap; gap: .7rem 1.1rem; margin: 0; padding: 0; list-style: none; }
 .il li { display: flex; flex-direction: column; align-items: center; text-align: center; }
