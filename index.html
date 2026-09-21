@@ -7,7 +7,9 @@
 <meta name="description" content="The Book of Mormon translated into the Hebrew of the Bible, pointed like the Masoretic text, with an English gloss under every word. Read it free online, in print, or in the app.">
 <link rel="canonical" href="https://hebrewbookofmormon.net/">
 <meta name="author" content="Chris Lambe">
-<meta name="theme-color" content="#1B2A41">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#1B2A41" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#101823" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="images/icon-192.png">
 <meta property="og:type" content="website">
@@ -24,7 +26,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://hebrewbookofmormon.net/images/social.png">
 <link rel="stylesheet" href="fonts/david_libre.css">
-<link rel="stylesheet" href="style.css?v=12">
+<link rel="stylesheet" href="style.css?v=13">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
 {"@type":"WebSite","@id":"https://hebrewbookofmormon.net/#website","url":"https://hebrewbookofmormon.net/","name":"Hebrew Book of Mormon","alternateName":["ספר מורמון","Sefer Mormon"],"inLanguage":["en","he"],"about":{"@id":"https://hebrewbookofmormon.net/#book"},"publisher":{"@id":"https://sefermormon.com/#chris"}},
@@ -47,7 +49,7 @@
   <div class="wrap">
     <a class="brand" href="/" aria-label="Hebrew Book of Mormon, home">
       <img class="mark" src="images/mark-bar.svg" alt="" width="34" height="34">
-      <span class="en">Hebrew Book of Mormon</span><span class="he" lang="he">ספר מורמון</span>
+      <span class="en" translate="no">Hebrew Book of Mormon</span><span class="he" lang="he" translate="no">ספר מורמון</span>
     </a>
     <nav aria-label="Site">
       <ul class="top">
@@ -65,7 +67,7 @@
 <section class="hero">
   <div class="wrap grid">
     <div class="hero-copy">
-      <p class="eyebrow"><span lang="he">ספר מורמון</span><span class="dot"></span>Sefer Mormon</p>
+      <p class="eyebrow"><span lang="he" translate="no">ספר מורמון</span><span class="dot" aria-hidden="true"></span><span translate="no">Sefer Mormon</span></p>
       <h1>The Book of Mormon, in the Hebrew of the Bible.</h1>
       <p class="lead">A complete translation of the Book of Mormon into biblical Hebrew, pointed like the Masoretic text, with an English gloss under every word. Read it free online, hold it in print, or carry it in the app.</p>
       <div class="actions">
@@ -73,8 +75,8 @@
         <a class="btn" href="https://sefermormon.com/in-print.html">Print editions</a>
       </div>
     </div>
-    <figure class="verse" aria-label="1 Nephi 1:1 in Hebrew, with transliteration and gloss">
-      <div class="ref"><span lang="he">נפי א׳ א:א</span><span>1 Nephi 1:1 · the first verse</span></div>
+    <figure class="verse">
+      <figcaption class="ref"><span lang="he">נפי א׳ א:א</span><span>1&nbsp;Nephi 1:1 · the first verse</span></figcaption>
       <ol class="il" aria-label="Hebrew words, right to left">
         <li><span class="h" lang="he">אֲנִי</span><span class="t">ani</span><span class="g">I</span></li>
         <li><span class="h" lang="he">נֶפִי</span><span class="t">nefi</span><span class="g">Nephi</span></li>
@@ -114,7 +116,7 @@
         <li><span class="h" lang="he">בַּסֵּפֶר׃</span><span class="t">bassefer</span><span class="g">in the book</span></li>
       </ol>
       <p class="en">I, Nephi, having been born of goodly parents, therefore I was taught somewhat in all the learning of my father; and having seen many afflictions in the course of my days, nevertheless, having been highly favored of the Lord in all my days; yea, having had a great knowledge of the goodness and the mysteries of God, therefore I make a record of my proceedings in my days.</p>
-      <p class="more"><a class="arrow" href="https://sefermormon.com/hebrew/book-of-mormon/1-nephi/1.html">Keep reading 1 Nephi 1</a></p>
+      <p class="more"><a class="arrow" href="https://sefermormon.com/hebrew/book-of-mormon/1-nephi/1.html">Keep reading 1&nbsp;Nephi&nbsp;1</a></p>
     </figure>
   </div>
 </section>
@@ -127,7 +129,7 @@
     <div class="doors">
       <a class="door" href="https://sefermormon.com/bom/bom.html"><strong>Read online</strong><span>The full interlinear at sefermormon.com: Hebrew, transliteration and English, chapter by chapter, with read-aloud.</span><span class="go arrow">sefermormon.com</span></a>
       <a class="door" href="https://sefermormon.com/in-print.html"><strong>In print</strong><span>Interlinear, Hebrew-only, dual-language, a footnote hardcover, and a triple combination.</span><span class="go arrow">Five editions</span></a>
-      <a class="door" href="https://apps.apple.com/us/app/sefer-mormon-standard-works/id6767954376"><strong>The app</strong><span>Sefer Mormon: Standard Works. The Hebrew scriptures on your phone, offline, free.</span><span class="go arrow">App Store</span></a>
+      <a class="door" href="https://apps.apple.com/us/app/sefer-mormon-standard-works/id6767954376"><strong>The app</strong><span><span translate="no">Sefer Mormon: Standard Works</span>. The Hebrew scriptures on your phone, offline, free.</span><span class="go arrow">App Store</span></a>
     </div>
   </div>
 </section>
@@ -139,7 +141,7 @@
     <div class="facts">
       <div class="fact"><h3>The Hebrew of the prophets</h3><p>Not modern Israeli Hebrew. The vocabulary of the Hebrew Bible, its narrative <span lang="he">וַיְהִי</span> grammar, its construct chains, its idiom. Where the Book of Mormon quotes Isaiah or Malachi, the Hebrew is the Masoretic text of that verse.</p></div>
       <div class="fact"><h3>Pointed like the Masoretic text</h3><p>Full Tiberian vowels and dagesh on every word, so it can be read aloud and studied. Names are written the way the Church’s pronunciation guide says them: <span lang="he">נֶפִי</span>, <span lang="he">אלמא</span>, <span lang="he">מורוני</span>.</p></div>
-      <div class="fact"><h3>A gloss under every word</h3><p>More than 125,000 words of Hebrew, each with its transliteration and its English beneath it. A reader with no Hebrew can follow; a reader with Hebrew can check every choice. <a class="arrow" href="translation.html">How it was made</a></p></div>
+      <div class="fact"><h3>A gloss under every word</h3><p>More than 125,000&nbsp;words of Hebrew, each with its transliteration and its English beneath it. A reader with no Hebrew can follow; a reader with Hebrew can check every choice. <a class="arrow" href="translation.html">How it was made</a></p></div>
     </div>
   </div>
 </section>
@@ -147,11 +149,11 @@
 <section id="books">
   <div class="wrap">
     <p class="kicker">The books</p>
-    <h2>Fifteen books, 239 chapters.<span class="he" lang="he">מנפי א׳ עד מורוני</span></h2>
+    <h2>15 books, 239&nbsp;chapters.<span class="he" lang="he">מנפי א׳ עד מורוני</span></h2>
     <p class="intro">Each name opens the first chapter of that book in the online reader.</p>
     <ul class="books">
-      <li><a href="https://sefermormon.com/hebrew/book-of-mormon/1-nephi/1.html"><span class="en">1 Nephi</span><span class="he" lang="he">נפי א׳</span><small>22 ch.</small></a></li>
-      <li><a href="https://sefermormon.com/hebrew/book-of-mormon/2-nephi/1.html"><span class="en">2 Nephi</span><span class="he" lang="he">נפי ב׳</span><small>33 ch.</small></a></li>
+      <li><a href="https://sefermormon.com/hebrew/book-of-mormon/1-nephi/1.html"><span class="en">1&nbsp;Nephi</span><span class="he" lang="he">נפי א׳</span><small>22 ch.</small></a></li>
+      <li><a href="https://sefermormon.com/hebrew/book-of-mormon/2-nephi/1.html"><span class="en">2&nbsp;Nephi</span><span class="he" lang="he">נפי ב׳</span><small>33 ch.</small></a></li>
       <li><a href="https://sefermormon.com/hebrew/book-of-mormon/jacob/1.html"><span class="en">Jacob</span><span class="he" lang="he">יעקב</span><small>7 ch.</small></a></li>
       <li><a href="https://sefermormon.com/hebrew/book-of-mormon/enos/1.html"><span class="en">Enos</span><span class="he" lang="he">אנוש</span><small>1 ch.</small></a></li>
       <li><a href="https://sefermormon.com/hebrew/book-of-mormon/jarom/1.html"><span class="en">Jarom</span><span class="he" lang="he">ירום</span><small>1 ch.</small></a></li>
@@ -160,8 +162,8 @@
       <li><a href="https://sefermormon.com/hebrew/book-of-mormon/mosiah/1.html"><span class="en">Mosiah</span><span class="he" lang="he">מושיה</span><small>29 ch.</small></a></li>
       <li><a href="https://sefermormon.com/hebrew/book-of-mormon/alma/1.html"><span class="en">Alma</span><span class="he" lang="he">אלמא</span><small>63 ch.</small></a></li>
       <li><a href="https://sefermormon.com/hebrew/book-of-mormon/helaman/1.html"><span class="en">Helaman</span><span class="he" lang="he">הילמן</span><small>16 ch.</small></a></li>
-      <li><a href="https://sefermormon.com/hebrew/book-of-mormon/3-nephi/1.html"><span class="en">3 Nephi</span><span class="he" lang="he">נפי ג׳</span><small>30 ch.</small></a></li>
-      <li><a href="https://sefermormon.com/hebrew/book-of-mormon/4-nephi/1.html"><span class="en">4 Nephi</span><span class="he" lang="he">נפי ד׳</span><small>1 ch.</small></a></li>
+      <li><a href="https://sefermormon.com/hebrew/book-of-mormon/3-nephi/1.html"><span class="en">3&nbsp;Nephi</span><span class="he" lang="he">נפי ג׳</span><small>30 ch.</small></a></li>
+      <li><a href="https://sefermormon.com/hebrew/book-of-mormon/4-nephi/1.html"><span class="en">4&nbsp;Nephi</span><span class="he" lang="he">נפי ד׳</span><small>1 ch.</small></a></li>
       <li><a href="https://sefermormon.com/hebrew/book-of-mormon/mormon/1.html"><span class="en">Mormon</span><span class="he" lang="he">מורמון</span><small>9 ch.</small></a></li>
       <li><a href="https://sefermormon.com/hebrew/book-of-mormon/ether/1.html"><span class="en">Ether</span><span class="he" lang="he">עתר</span><small>15 ch.</small></a></li>
       <li><a href="https://sefermormon.com/hebrew/book-of-mormon/moroni/1.html"><span class="en">Moroni</span><span class="he" lang="he">מורוני</span><small>10 ch.</small></a></li>
@@ -178,7 +180,7 @@
       <img src="images/icon-192.png" width="192" height="192" alt="" loading="lazy">
       <div>
         <p>The Book of Mormon in Hebrew on your phone, with the interlinear, the transliteration, read-aloud, notes and bookmarks, and it works offline. Alongside it, the Old Testament, the New Testament, the Doctrine and Covenants and the Pearl of Great Price, all in Hebrew, all interlinear. Free.</p>
-        <a class="btn primary" href="https://apps.apple.com/us/app/sefer-mormon-standard-works/id6767954376">Get it on the App Store</a>
+        <a class="btn" href="https://apps.apple.com/us/app/sefer-mormon-standard-works/id6767954376">Get it on the App Store</a>
         <p class="note">An Android version is in testing and is coming to Google Play.</p>
       </div>
     </div>
@@ -204,7 +206,7 @@
 <footer>
   <div class="wrap">
     <div class="cols">
-      <div><h3>Hebrew Book of Mormon <span class="he" lang="he">ספר מורמון</span></h3><p>The Book of Mormon translated into biblical Hebrew by Chris Lambe. Read free online, in print, and in the app.</p></div>
+      <div><h3 translate="no">Hebrew Book of Mormon <span class="he" lang="he">ספר מורמון</span></h3><p>The Book of Mormon translated into biblical Hebrew by Chris Lambe. Read free online, in print, and in the app.</p></div>
       <div><h3>Read</h3><ul><li><a href="https://sefermormon.com/bom/bom.html">The Book of Mormon in Hebrew</a></li><li><a href="https://sefermormon.com/">Sefer Mormon: the Standard Works</a></li><li><a href="translation.html">About the translation</a></li></ul></div>
       <div><h3>Get it</h3><ul><li><a href="https://sefermormon.com/in-print.html">Print editions</a></li><li><a href="https://apps.apple.com/us/app/sefer-mormon-standard-works/id6767954376">iPhone and iPad app</a></li><li><a href="https://www.amazon.com/stores/author/B0DTYPWNXM">Author page on Amazon</a></li></ul></div>
     </div>
