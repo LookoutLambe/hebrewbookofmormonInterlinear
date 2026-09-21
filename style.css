@@ -119,7 +119,8 @@ h2 .he { color: var(--ink-3); font-weight: 400; margin-left: .6rem; font-size: .
 .books .en { flex: 1; }
 .books small { color: var(--ink-3); font-size: .74rem; white-space: nowrap; }
 
-.eds { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 1.4rem 1.25rem; }
+.eds { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 1.4rem 1.25rem; }
+@media (min-width: 860px) { .eds { grid-template-columns: repeat(5, minmax(0, 1fr)); } }
 .ed { text-decoration: none; color: inherit; display: block; }
 .ed .cover { aspect-ratio: 2 / 3; display: flex; align-items: flex-end; justify-content: center; }
 .ed img { max-height: 100%; width: auto; border: 1px solid var(--rule); border-radius: 3px; box-shadow: var(--shadow); }
